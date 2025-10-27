@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+body,
+.theme-dark {
+  background: #111;
+  color: #fff;
+  margin: 0;
+}
+
+.theme-light {
+  background: #f6f6f6;
+  color: #181818;
+}
+
+.home {
+  scroll-margin-top: 130px;
+  max-width: 900px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile_pic {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 28px;
+  border: 4px solid #222;
+}
+
+.job_status {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  width: fit-content;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: "Georama", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 15px;
+}
+
+.job_status span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.theme-light .profile_pic {
+  border: 4px solid #b6b6b6;
+}
+
+.user_info {
+  text-align: center;
+  margin: 10px 0 10px;
+}
+
+.intro {
+  width: 80%;
+  margin: 0 auto 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #fff;
+  letter-spacing: 0px;
+}
+
+.theme-light .intro {
+  color: #232323;
+}
+
+.intro span {
+  color: #ef4677;
+  font-weight: 800;
+}
+
+.home_title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e6e6e6;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.5px;
+}
+
+.theme-light .home_title {
+  color: #444;
+}
+
+.home_description {
+  width: 90%;
+  margin: 0 auto;
+  color: #b7b7b7;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.theme-light .home_description {
+  color: #666;
+}
+
+.social_links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.get-touch,
+.download_resume {
+  background-color: black;
+  color: #fff;
+  padding: 11px 26px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  transition: background 0.18s, color 0.18s;
+}
+
+.theme-dark .get-touch {
+  background: #fff;
+  color: #000;
+}
+
+.get-touch {
+  margin-right: 10px;
+}
+
+.get-touch a,
+.download_resume a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  gap: 8px;
+  font-size: 1em;
+}
+
+.download_resume {
+  background: #181818;
+  color: #fff;
+  border: 1.5px solid #3d3d3d;
+  box-shadow: 0 1.5px 6px 0 #000;
+}
+
+.theme-light .download_resume {
+  background: #eee;
+  color: #222;
+  border: 1.5px solid #cfcfcf;
+  box-shadow: 0 1.5px 7px 0 #e4e4e4;
+}
+
+.download_resume:hover,
+.get-touch:hover {
+  background: #282828;
+  color: #fff;
+}
+
+.theme-light .download_resume:hover,
+.theme-light .get-touch:hover {
+  background: #282828;
+  color: #fff;
+}
+
+.download-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.icon_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.23s, border-color 0.22s;
+}
+
+.icons {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  display: flex;
+}
+
+.theme-light .icons {
+  color: #232323;
+}
+
+.theme-light .icons {
+  color: #232323;
+}
+
+.homeBraker {
+  width: 4px;
+  height: 80px;
+  background: linear-gradient(180deg, #3b3b3b 0%, #2b2b2b 100%);
+  border-radius: 6px;
+  border: none;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.02),
+    0 0 10px rgba(0, 0, 0, 0.6);
+  margin: 12px auto;
+  display: block;
+}
+
+.theme-light .homeBraker {
+  background: linear-gradient(180deg, #cfcfcf 0%, #b6b6b6 100%);
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.06),
+    0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .home {
+    scroll-margin-top: 130px;
+    padding: 15px;
+  }
+
+  .profile_pic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+  .home_description {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .social_links {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .get-touch,
+  .download_resume {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .icon_button {
+    padding: 8px;
+  }
+
+  .icons {
+    width: 50px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 10px;
+  }
+
+  .profile_pic {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+  }
+
+  .job_status {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .intro {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .home_description {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  .social_links {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .get-touch,
+  .download_resume {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .get-touch {
+    margin-right: 0;
+  }
+
+  /* Social icons container styling for mobile */
+  .social_links .icons {
+    height: auto;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Individual icon button styling for mobile */
+  .icon_button {
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    overflow: visible;
+  }
+
+  body.theme-light .icon_button {
+    border: 2px solid #181818;
+  }
+
+  .icon_button .icons {
+    width: 50px;
+    height: 24px;
+    color: #ffffff;
+    stroke-width: 1.5;
+    display: block;
+    margin: 0;
+  }
+
+  body.theme-light .icon_button .icons {
+    color: #181818;
+  }
+}

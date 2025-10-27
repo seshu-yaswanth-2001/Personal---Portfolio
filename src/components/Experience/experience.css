@@ -1,0 +1,300 @@
+.theme-dark .experience {
+  color: #fff;
+}
+.theme-light .experience {
+  color: #212121;
+}
+
+.theme-dark .experience > p,
+.theme-dark .experience-item > p {
+  color: #a3a3a3;
+}
+.theme-light .experience > p,
+.theme-light .experience-item > p {
+  color: #3a3a47;
+}
+
+.experience {
+  min-height: 100vh;
+  padding: 40px 0;
+}
+.experience h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.6rem;
+  letter-spacing: 1px;
+}
+.experience > p {
+  text-align: center;
+  font-size: 1.08rem;
+  margin-bottom: 2.5rem;
+}
+.experience-list {
+  max-width: 730px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 30px;
+}
+.experience-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 18px;
+  width: 3px;
+  background: #2d2d35;
+  border-radius: 2px;
+}
+.theme-light .experience-list::before {
+  background: #dae2ed;
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 2.8rem;
+  padding-left: 40px;
+}
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: -17px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: inherit;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 0 0 4px inherit;
+}
+.theme-dark .experience-item::before {
+  border-color: #fff;
+  background: #18181b;
+  box-shadow: 0 0 0 4px #18181b;
+}
+.theme-light .experience-item::before {
+  border-color: #222;
+  background: #f6f6f7;
+  box-shadow: 0 0 0 4px #f6f6f7;
+}
+
+.organization {
+  display: flex;
+  align-items: center;
+  gap: 0.65em;
+}
+
+.organization svg {
+  width: 1.15em;
+  height: 1.15em;
+  margin-bottom: 2px;
+  color: #7c3aed;
+}
+
+.experience-item h3 {
+  font-size: 1.19rem;
+  font-weight: 700;
+  margin-bottom: 0.14rem;
+  letter-spacing: 0.4px;
+}
+.experience-item h4 {
+  font-size: 1.07rem;
+  font-weight: 600;
+  margin-bottom: 0.11rem;
+}
+
+.experience-item h3,
+.experience-item h4 {
+  color: inherit;
+}
+
+.duration {
+  display: flex;
+  align-items: center;
+  gap: 0.55em;
+  color: #fff;
+  font-weight: 500;
+  margin: 10px 0 2px 0;
+  font-size: 1.035rem;
+}
+.theme-light .duration {
+  color: #212121;
+}
+
+.duration svg {
+  width: 1.04em;
+  height: 1.04em;
+  vertical-align: middle;
+  margin-right: 0.18em;
+  color: #7c3aed;
+}
+
+.experience-item > p {
+  margin: 0.13rem 0 0.23rem 0;
+  font-size: 0.97rem;
+  font-weight: 500;
+}
+.desc {
+  color: inherit;
+  margin-bottom: 0.7em;
+  font-size: 0.99rem;
+  line-height: 1.55;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.7rem;
+  margin-top: 1rem;
+}
+.skill {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  border: 1.3px solid #3f3f46;
+  border-radius: 999px;
+  padding: 0.28em 1.01em;
+  font-size: 0.97rem;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+  transition: background 0.14s, color 0.14s, border-color 0.14s;
+  cursor: pointer;
+}
+.theme-light .skill {
+  border-color: #b8bac5;
+  color: #363646;
+}
+.skill:hover {
+  background: #27272a;
+  color: #a78bfa;
+  border-color: #7e22ce;
+}
+.theme-light .skill:hover {
+  background: #e5e7ec;
+  color: #6b21a8;
+  border-color: #7e22ce;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .experience {
+    scroll-margin-top: 50px;
+    padding: 30px 15px;
+  }
+
+  .experience h2 {
+    font-size: 1.6rem;
+  }
+
+  .experience > p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .experience-list {
+    max-width: 100%;
+    padding-left: 20px;
+  }
+
+  .experience-list::before {
+    left: 12px;
+    width: 2px;
+  }
+
+  .experience-item {
+    padding-left: 30px;
+    margin-bottom: 2rem;
+  }
+
+  .experience-item::before {
+    left: -12px;
+    width: 6px;
+    height: 6px;
+    border-width: 2px;
+  }
+
+  .experience-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .experience-item h4 {
+    font-size: 1rem;
+  }
+
+  .desc {
+    font-size: 0.95rem;
+  }
+
+  .skill {
+    font-size: 0.9rem;
+    padding: 0.25em 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 20px 10px;
+    min-height: auto;
+  }
+
+  .experience h2 {
+    font-size: 1.4rem;
+  }
+
+  .experience > p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .experience-list {
+    padding-left: 15px;
+  }
+
+  .experience-list::before {
+    left: 10px;
+  }
+
+  .experience-item {
+    padding-left: 25px;
+    margin-bottom: 1.5rem;
+  }
+
+  .experience-item::before {
+    left: -10px;
+    width: 5px;
+    height: 5px;
+  }
+
+  .experience-item h3 {
+    font-size: 1rem;
+  }
+
+  .experience-item h4 {
+    font-size: 0.95rem;
+  }
+
+  .duration {
+    font-size: 0.95rem;
+    margin: 8px 0 2px 0;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .skills {
+    gap: 0.4rem 0.6rem;
+  }
+
+  .skill {
+    font-size: 0.85rem;
+    padding: 0.22em 0.8em;
+  }
+}
