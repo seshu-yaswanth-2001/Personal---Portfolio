@@ -45,7 +45,7 @@ export const aboutConfig = [
   {
     id: 2,
     description:
-      "Alongside my frontend expertise, I have a solid foundation in JavaScript, HTML, CSS, and familiarity with tools like Git, API integration, and basic backend concepts. This helps me collaborate effectively across the full development process — from design to deployment.",
+      "Alongside my frontend expertise, I have a solid foundation in JavaScript, HTML, CSS, and familiarity with tools like Git, API integration, and basic backend concepts. This helps me collaborate effectively across the full development process, from design to deployment.",
   },
   {
     id: 3,
